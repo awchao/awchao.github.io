@@ -292,9 +292,11 @@ body.home a.home, body.about a.about, body.contact a.contact {
     padding-top: 10px;
 }
 
+
 .flexbox{
     align-content: center;
 }
+
 
 
 .row {
@@ -365,7 +367,7 @@ body.home a.home, body.about a.about, body.contact a.contact {
     position: fixed;
     top: 0; left: 0; bottom: 0; right: 0;
     margin: auto;
-    height: 3.6%;
+    height: 27px;
     width: 248px;
 }
 
@@ -382,25 +384,118 @@ body.home a.home, body.about a.about, body.contact a.contact {
     position: fixed;
     top: 0; left: 0; bottom: 0; right: 0;
     margin: auto;
-    height: 3.6%;
+    height: 22.5px;
     width: 223px;
-    overflow-x: scroll;
-    min-width: 223px;
 }
 
-@media only screen and (max-width: 720px) {
+
+
+@media only screen and (max-width: 750px) {
     
-    .topbar {
+    .topbar { 
         overflow-x: scroll;
-        min-width: 720px;
+        min-width: 750px;
     }
     
-    .row {
+    
+    .flexbox {
         overflow-x: scroll;
-        min-width: 720px;
+        min-width: 750px;
+        padding-bottom: 9px;
+    }
+    
+    body.home {
+        transform: scale(0.75);
+        transform-origin: top;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    .r3, .r4 {
+        padding-top: 8px;
+    }
+    
+    .r11, .r12 {
+        padding-top: 8px;
+    }
+    
+    html, body {
+        height: 100%;
+    }
+    
+    body.contact, body.about {
+        transform: scale(0.75);
+        transform-origin: top;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    
+    .emailline, .aboutme {
+        transform: scale(1.25, 1.25);
+        margin-top: 61%
+    }
+    
+    
+    
+    @media only screen and (max-width: 600px) {
+        body.home {
+            transform: scale(0.6);
+            transform-origin: top;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+        
+        .emailline, .aboutme {
+            transform: scale(1.35, 1.35);
+        }
+        
+        body.contact, body.about {
+            transform: scale(0.6);
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+    
+    }
+    
+    @media only screen and (max-width: 498px) {
+        body.home {
+            transform: scale(0.55);
+            transform-origin: top;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+        
+        .emailline, .aboutme {
+            transform: scale(1.4, 1.4);
+        }
+        
+        body.contact, body.about {
+            transform: scale(0.55);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+        
     }
     
 }
+
+    
+
+
+
+
+
 
 
 

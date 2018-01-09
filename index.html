@@ -14,6 +14,8 @@
     </head>
     
 <body class="home">
+    
+    <div class="tester">
       
     <div class="topbar">
     
@@ -351,6 +353,9 @@
         </div>
     
     </div>
+        
+        </div>
+    </div>
    
     <div id="o1" class="overlay" onclick='off("o1")'> 
         <img class="big" src="img/DSCF3103.jpg"/>
@@ -568,14 +573,24 @@
         <img class="big" src="img/DSCF7887.jpg"/>
     </div>
         
-    </div>
+   
+    
     
     <script>
+        
+        function isResized() {
+            return $(document).width();
+        }
     
         function on(x) {
-            var c = document.getElementById(x);
-            c.style.display = "block";    
-        }
+            if (isResized() < 750) {
+                return;
+            }
+            else {
+                var c = document.getElementById(x);
+                c.style.display = "block"; 
+            }
+        }   
         function off(x) {
             document.getElementById(x).style.display = "none";
         }  
